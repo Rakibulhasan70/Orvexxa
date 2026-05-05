@@ -48,9 +48,9 @@ export default function Testimonials() {
                 ))}
               </div>
               {/* Text */}
-              <p className="text-gray-500 text-sm leading-relaxed">
-                "{t.text}"
-              </p>
+          <p className="text-gray-500 text-sm leading-relaxed">
+  This product is amazing
+</p>
               {/* Author */}
               <div className="mt-auto pt-4 border-t border-gray-100">
                 <p className="text-sm font-semibold text-black">{t.name}</p>
