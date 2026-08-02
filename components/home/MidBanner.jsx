@@ -1,15 +1,19 @@
 // components/home/MidBanner.jsx
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MidBanner() {
   return (
     <section className="w-full bg-black py-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Image Placeholder */}
-        <div className="w-full h-[400px] bg-gray-800 flex items-center justify-center">
-          <p className="text-gray-500 uppercase tracking-widest text-sm">
-            Banner Image
-          </p>
+        {/* Banner Image */}
+        <div className="relative w-full h-[400px] bg-gray-800 overflow-hidden">
+          <Image
+            src="/products/limited-edition.png"
+            alt="Crafted for perfection"
+            fill
+            className="object-cover"
+          />
         </div>
 
         {/* Text */}

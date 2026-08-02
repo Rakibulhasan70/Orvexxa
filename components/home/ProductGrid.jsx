@@ -1,42 +1,6 @@
 // components/home/ProductGrid.jsx
-const products = [
-  {
-    id: 1,
-    title: "Minimalist Watch",
-    category: "Accessories",
-    price: "$129.00",
-  },
-  {
-    id: 2,
-    title: "Leather Wallet",
-    category: "Accessories",
-    price: "$89.00",
-  },
-  {
-    id: 3,
-    title: "Silk Scarf",
-    category: "Fashion",
-    price: "$69.00",
-  },
-  {
-    id: 4,
-    title: "Canvas Tote",
-    category: "Bags",
-    price: "$49.00",
-  },
-  {
-    id: 5,
-    title: "Gold Bracelet",
-    category: "Jewelry",
-    price: "$159.00",
-  },
-  {
-    id: 6,
-    title: "Sunglasses",
-    category: "Accessories",
-    price: "$99.00",
-  },
-];
+import Image from "next/image";
+import { products } from "@/lib/products";
 
 export default function ProductGrid() {
   return (
@@ -55,24 +19,31 @@ export default function ProductGrid() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {products.map((p) => (
-            <div key={p.id} className="group cursor-pointer">
+            <div key={p.id} href={`/products/${p.slug}`} className="group cursor-pointer">
               {/* Image */}
-              <div className="w-full h-72 bg-[#f5f0eb] flex items-center justify-center mb-4 overflow-hidden">
-                <p className="text-gray-400 uppercase tracking-widest text-xs">
-                  Product Image
-                </p>
+              <div className="relative w-full h-72 bg-[#f5f0eb] mb-4 overflow-hidden">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
               {/* Info */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
-                    {p.category}
-                  </p>
+              <div>
+                <div className="flex items-center justify-between mb-1">
                   <h3 className="text-sm font-semibold text-black group-hover:text-gray-500 transition-colors">
                     {p.title}
                   </h3>
+                  <p className="text-sm font-semibold text-black">{p.price}</p>
                 </div>
-                <p className="text-sm font-semibold text-black">{p.price}</p>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
+                  {p.size}
+                </p>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {p.description}
+                </p>
               </div>
             </div>
           ))}

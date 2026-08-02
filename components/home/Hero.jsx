@@ -1,6 +1,6 @@
 // components/home/Hero.jsx
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Hero() {
   return (
     <section className="w-full bg-[#f5f0eb] min-h-[90vh] flex items-center">
@@ -35,10 +35,15 @@ export default function Hero() {
         </div>
 
         {/* Image Placeholder */}
-        <div className="w-full h-[500px] bg-[#e8e0d8] flex items-center justify-center">
-          <p className="text-gray-400 uppercase tracking-widest text-sm">
-            Hero Image
-          </p>
+       {/* Hero Image */}
+        <div className="relative w-full h-[500px] bg-[#e8e0d8] overflow-hidden">
+          <Image
+            src="/products/hero.png"
+            alt="Black Floral Tote"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
     </section>
