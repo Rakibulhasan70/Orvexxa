@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold tracking-widest uppercase mb-4">
-            Orvexxa
+            Orvexa
           </h2>
           <p className="text-gray-400 text-sm leading-relaxed">
             Premium quality products crafted for those who appreciate elegance
@@ -46,7 +46,7 @@ export default function Footer() {
             Contact
           </h3>
           <ul className="flex flex-col gap-2 text-gray-400 text-sm">
-            <li>info@orvexxa.com</li>
+            <li>info@Orvexa.com</li>
             <li>+1 (800) 123-4567</li>
             <li>New York, USA</li>
           </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 px-6 py-4 text-center text-gray-500 text-xs">
-        © {new Date().getFullYear()} Orvexxa. All rights reserved.
+        © {new Date().getFullYear()} Orvexa. All rights reserved.
       </div>
     </footer>
   );

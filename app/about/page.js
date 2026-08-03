@@ -9,7 +9,7 @@ export default function About() {
             Who We Are
           </p>
           <h1 className="text-5xl font-bold tracking-tight text-black">
-            About Orvexxa
+            About Orvexa
           </h1>
           <p className="text-gray-500 text-base leading-relaxed max-w-xl">
             We are a premium lifestyle brand dedicated to bringing you the
@@ -35,7 +35,7 @@ export default function About() {
               <span className="italic font-light">For Excellence</span>
             </h2>
             <p className="text-gray-500 text-base leading-relaxed">
-              Orvexxa was founded with a simple mission — to create products
+              Orvexa was founded with a simple mission — to create products
               that stand the test of time. We believe that true luxury lies in
               the details, and every piece we craft reflects our commitment to
               quality and elegance.

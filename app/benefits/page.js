@@ -47,7 +47,7 @@ export default function Benefits() {
             Our Benefits
           </h1>
           <p className="text-gray-500 text-base leading-relaxed max-w-xl">
-            We go above and beyond to ensure every experience with Orvexxa
+            We go above and beyond to ensure every experience with Orvexa
             is nothing short of exceptional.
           </p>
         </div>
@@ -78,10 +78,10 @@ export default function Benefits() {
             Ready To Experience
           </p>
           <h2 className="text-4xl font-bold text-white tracking-tight">
-            The Orvexxa Difference
+            The Orvexa Difference
           </h2>
           <p className="text-gray-400 text-base leading-relaxed max-w-xl">
-            Join thousands of satisfied customers who have made Orvexxa
+            Join thousands of satisfied customers who have made Orvexa
             their go-to destination for premium lifestyle products.
           </p>
         </div>

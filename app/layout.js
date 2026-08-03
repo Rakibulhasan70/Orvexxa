@@ -9,8 +9,8 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata = {
-  title: "Orvexxa",
-  description: "Orvexxa - Official Website",
+  title: "Orvexa",
+  description: "Orvexa - Official Website",
 };
 
 export default function RootLayout({ children }) {

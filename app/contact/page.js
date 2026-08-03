@@ -56,7 +56,7 @@ export default function Contact() {
                 {
                   icon: <Mail size={20} />,
                   label: "Email",
-                  value: "info@orvexxa.com",
+                  value: "info@Orvexa.com",
                 },
                 {
                   icon: <Phone size={20} />,

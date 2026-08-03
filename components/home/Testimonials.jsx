@@ -4,19 +4,19 @@ const testimonials = [
     id: 1,
     name: "Sarah Johnson",
     role: "Fashion Blogger",
-    text: "Orvexxa products are absolutely stunning. The quality is unmatched and the designs are timeless. I get compliments every time I wear them.",
+    text: "Orvexa products are absolutely stunning. The quality is unmatched and the designs are timeless. I get compliments every time I wear them.",
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "Interior Designer",
-    text: "I have been shopping with Orvexxa for over a year now. Every single product exceeds my expectations. Truly a premium experience.",
+    text: "I have been shopping with Orvexa for over a year now. Every single product exceeds my expectations. Truly a premium experience.",
   },
   {
     id: 3,
     name: "Emma Williams",
     role: "Lifestyle Influencer",
-    text: "The attention to detail in every Orvexxa product is remarkable. From packaging to the product itself, everything feels luxurious.",
+    text: "The attention to detail in every Orvexa product is remarkable. From packaging to the product itself, everything feels luxurious.",
   },
 ];
 
